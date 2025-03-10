@@ -27,4 +27,3 @@ const rezult =
             ? console.log("Преподаватель")
             : console.log("Студент")
 
-// || c? console.log("Преподаватель") : console.log("Студент")
