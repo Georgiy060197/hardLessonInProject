@@ -1,12 +1,30 @@
-const num = 1235
-const str = num.toString()
-let rezult = 1
-for (let i = 0; i < str.length; i++) {
-    rezult = rezult * Number(str[i])
+const lang = "en";
+if (lang === "ru") {
+    console.log("Понедельник, Вторник, Среда, Четверг, Пятница, Суббота");
+} else if (lang === "en") {
+    console.log("Monday, Tuesday, Wednesday, Thursday, Friday, Saturday, Sunday");
+} else if (lang !== "ru" && lang !== "en") {
+    console.log("Error");
 }
-console.log(rezult)
-let powNum = rezult ** 3
-console.log(powNum)
-let strPowNum = powNum.toString()
-let twoNum = strPowNum.slice(0, 2)
-console.log(twoNum)
+
+switch (true) {
+    case lang === "ru":
+        console.log("Понедельник, Вторник, Среда, Четверг, Пятница, Суббота");
+        break
+    case lang === "en":
+        console.log("Monday, Tuesday, Wednesday, Thursday, Friday, Saturday, Sunday");
+        break
+    case lang !== "ru" && lang !== "en":
+        console.log("Error");
+        break
+}
+
+const namePerson = "Артем"
+const rezult =
+    namePerson === "Артем"
+        ? console.log("Директор")
+        : namePerson === "Александр"
+            ? console.log("Преподаватель")
+            : console.log("Студент")
+
+// || c? console.log("Преподаватель") : console.log("Студент")
