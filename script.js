@@ -5,8 +5,8 @@ for (let i = 0; i < str.length; i++) {
     rezult = rezult * Number(str[i])
 }
 console.log(rezult)
-let powNum = rezult ** 3
+const powNum = rezult ** 3
 console.log(powNum)
-let strPowNum = powNum.toString()
-let twoNum = strPowNum.slice(0, 2)
+const strPowNum = powNum.toString()
+const twoNum = strPowNum.slice(0, 2)
 console.log(twoNum)
